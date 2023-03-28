@@ -1,0 +1,169 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+  @import url('https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css');
+  @import url('reset.css');
+  @import url('layout.css');
+  html, body{
+    height: 100%;
+  }
+  body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #777;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  a.a link{
+    color: #888;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #444;
+    text-decoration: underline;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .col-md6>div{
+    min-height: 80px;
+    background: yellow;
+  }
+  .container{
+    width:100%;
+    height: 100%;
+  }
+  .col-right{
+    max-width: 65%;
+    flex : 0 0 65%;
+    height: inherit;
+    border-top: 5px solid #999;
+  }
+  .row{
+    height: inherit;
+  }
+  .col-left{
+    max-width: 35%;
+    height: 100%;
+    flex : 0 0 35%;
+    /* box-shadow: 2px 0 10px 0 rgba(0,0,0,0.1),
+                8px 0 25px 0 rgba(0,0,0,0.08); */
+    padding: 0;
+    position: relative;
+  }
+  .col-left::after{
+    content: "";
+    width: 40px;
+    height: 680px;
+    background:url(../images/shadow.png) no-repeat center;
+    position: absolute;
+    top: 50px;
+    right: -40px;
+  }
+  .images{
+    width: 100%;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .col-left h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    letter-spacing: 5px;
+  }
+  .col-left p{
+    font-size: 14px;
+    color: #2587a7;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  div.sns{
+    margin-top: 10px;
+    font-size: 20px;
+    justify-content: center;
+  }
+  div.sns i{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .download{
+    position: absolute;
+    bottom: 50px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .download li{
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-size: 16px;
+    position: relative;
+  }
+  .download li:first-child::after{
+    content: "";
+    width: 1px;
+    height: 30px;
+    background: linear-gradient(#eee, #333, #eee);
+    position: absolute;
+    top: -5px;
+    right: 0px;
+  }
+   .download li a{
+    text-decoration: none;
+    color: #777;
+   }
+   .download li a:hover{
+    color: #fd3535;
+   }
+   .col-right h1{
+    padding : 20px 20px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fd3535;
+   }
+   .col-right h1 span{
+    color: #444;
+   }
+   h1::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #999, #eee);
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+   }
+   .content{
+    padding: 20px;
+    position: relative;
+   }
+   .content p{
+    padding-bottom: 20px;
+    word-spacing: 4px;
+    line-height: 1.3;
+   }
+   .content::first-letter{
+    font-size: 25px;
+   }
+   .content::after{
+    content: "";
+    display: block;
+    height: 80%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, #999, #fff);
+   }
+   .skills{
+    margin: 30px;
+   }
+  @media (max-width: 576px){
+    .col-left, .col-right{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+  }

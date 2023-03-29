@@ -1,4 +1,6 @@
 $(function(){
-    $('skills').mysillbar({});
+    $('.skills').myskillbar({
+
+    });
 });
 
